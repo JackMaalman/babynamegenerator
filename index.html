@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Random Name Generator</title>
+  <style>
+      body {
+          border: 6px double green
+          }
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFC0CB; /* Soft pink background */
+    }
+
+    /* Button styles */
+    button {
+      background-color: #4CAF50; /* Green button */
+      color: #fff; /* White text */
+      padding: 10px 850px;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e8e41; /* Darker green on hover */
+    }
+
+    /* Text styles */
+    #name-display {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .knop-container {
+    margin-top: -60px;
+    margin-left: 30px;
+    text-align: left;
+}
+  </style>
+    <link rel="icon" type="image/x-icon" href="baby.jpeg">
+</head>
+<body>
+    <h1>genereer een naam voor uw kind</h1>
+  <div class="container">
+    <button id="generate-name">Generate Name</button>
+    <div id="name-display"></div>
+  </div>
+<img src="baby.jpeg" alt="goed">
+ <p style="position: absolute; bottom: 0; left: 50%; transform: 
+<img src="hoi.png" alt="baby" hspace=1400>
+     
+    
+  <script>
+     const names = [
+      "John",
+      "Emily",
+      "Michael",
+      "Sarah",
+      "William",
+      "Olivia",
+      "James",
+      "Mia",
+      "Robert",
+      "Isabella",
+      "Jack Maalman",
+      "Luuk",
+      "Ethan",
+      "Lily",
+      "Noah",
+      "Ava",
+      "Logan",
+      "Sophia",
+      "Jackson",
+      "Charlotte",
+      "Gabriel",
+      "Abigail",
+      "Owen",
+      "Harper",
+      "Lucas",
+      "Evelyn",
+      "Puk",
+      "Lou",
+      "Billy",
+      "Emiel",
+      "Miel",
+      "Vince",
+      "Nora",
+      "Emma",
+      "Henk",
+      "Jaap",
+      "Karel",
+      "Tim",
+      "Lisa",
+      "Jenniffer",
+      "Kees",
+      "Klaas",
+      "Joep",
+      "Lot",
+      "Sam",
+      "Sem",
+      "dike papzak",
+      "Noël",
+      "saar",
+      "Sophie",
+      "Noor",
+      "Tess",
+      "Luca",
+      "Liam",
+      "Bertje",
+      // Add more names here!
+    ];
+
+    const nameDisplay = document.getElementById("name-display");
+    const generateButton = document.getElementById("generate-name");
+
+    generateButton.addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * names.length);
+      const randomName = names[randomIndex];
+      nameDisplay.textContent = `De naam van uw kind is  ${randomName}!`;
+    });// Same JavaScript code as before
+  </script>
+</body>
+</html>
