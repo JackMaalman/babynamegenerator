@@ -5,6 +5,7 @@
   body {
     font-family: Arial, sans-serif;
     background-color: #FFC0CB;
+    border: 6px double green;
   }
 
   button {
@@ -26,8 +27,23 @@
     margin-top: 20px;
   }
 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFC0CB;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+
   /* Stijlen voor mobiele apparaten */
   @media (max-width: 600px) {
+    body {
+      border: 3px double green; /* Dunner rand op mobiele apparaten */
+    }
+
     button {
       padding: 20px 40px; /* Kleinere knop op mobiele apparaten */
     }
@@ -35,8 +51,13 @@
     #name-display {
       font-size: 18px; /* Kleinere tekst op mobiele apparaten */
     }
+
+    .footer {
+      padding: 5px 0; /* Dunner footer op mobiele apparaten */
+    }
   }
 </style>
+
 
     <link rel="icon" type="image/x-icon" href="baby.jpeg">
 </head>
