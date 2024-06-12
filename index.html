@@ -1,65 +1,43 @@
 <html>
 <head>
 <title>Baby Name Generator</title>
-  <style>
-    @media (max-width: 600px) {
-    /* Stijlen voor kleine schermen */
-}
-@media (min-width: 601px) and (max-width: 1500px) {
-    /* Stijlen voor middelgrote schermen */
-}
-@media (min-width: 1501px) {
-    /* Stijlen voor grote schermen */
-}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB;
+  }
 
-      body {
-          border: 6px double green
-          }
-    /* Global styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #FFC0CB; /* Soft pink background */
-    }
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 50px 100px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+  }
 
-    /* Button styles */
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  #name-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  /* Stijlen voor mobiele apparaten */
+  @media (max-width: 600px) {
     button {
-      background-color: #4CAF50; /* Green button */
-      color: #fff; /* White text */
-      padding: 50px 100px;
-      border: none;
-      border-radius: 60px;
-      cursor: pointer;
+      padding: 20px 40px; /* Kleinere knop op mobiele apparaten */
     }
 
-    button:hover {
-      background-color: #3e8e41; /* Darker green on hover */
-    }
-
-    /* Text styles */
     #name-display {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
+      font-size: 18px; /* Kleinere tekst op mobiele apparaten */
     }
-    .knop-container {
-    margin-top: -60px;
-    margin-left: 30px;
-    text-align: left;
-    
-}
-    
-.footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #FFC0CB;
-            color: black;
-            text-align: center;
-            padding: 10px 0;
-        }
-    
-  </style>
+  }
+</style>
+
     <link rel="icon" type="image/x-icon" href="baby.jpeg">
 </head>
 <body>
